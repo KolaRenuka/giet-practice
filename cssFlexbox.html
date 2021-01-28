@@ -3,7 +3,7 @@
 <head>
 	<title>felxbox</title>
 	<link rel="icon"  href="css.svg">
-	<meta name="viewport"content="width=device-width,initial-scale=1"/>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0"/>
 	<style>
 		.parent{
 			
@@ -15,18 +15,18 @@
 		}
 		
 		.child{
-			background-color:powderblue;
-			border:1px outset black;
+			
+			border:5px outset black;
 			flex-size:120px;
 			padding: 1%; 
 			margin: 1%;
-			width:  40%;
+			width:  35%;
 			justify-content: space-between;		
 		}
 		/* small scale devices */
 		@media only screen and (min-width: 320px) and (max-width: 420px){
 			.child{
-				width:40%;
+				width:35%;
 				font-size: 25px;
 				background: pink; 
 			}
@@ -34,20 +34,21 @@
 		/*medium scale devices */
          @media only screen and (min-width: 481px) and (max-width: 767px){
 			.child{
-				width:40%;
+				width:35%;
 				font-weight: 600;
 				background:yellow; 
 				border: 1px solid black;
-				border-radius: 10px;
+				border-radius: 7px;
 				box-shadow: 3px 3px  black;
 			}
 		}
 		/*Large scale devices */
          @media only screen and (min-width: 768px) and (max-width: 1024px){
 			.child{
-				width:25%;
-				
-				box-shadow: 2px 2px  black;
+				width:35%;
+				background:cyan;
+				border-radius: 40px;
+				box-shadow: 3px 3px  black;
 			}
 		}
 
@@ -57,7 +58,7 @@
 </head>
 <body>
 	<section class="parent">
-		<article style="align:centre"class="child">INDIA</article>
+		<article class="child">INDIA</article>
 		<article class="child">PARIS</article>
 		<article class="child">USA</article>
 		<article class="child">KOREA</article>
